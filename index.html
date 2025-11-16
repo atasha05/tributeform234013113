@@ -1,56 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Tribute to Nikola Tesla</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <main id="main">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
 
-        <h1 id="title">Nikola Tesla: The Master of Alternating Current</h1>
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7;
+}
 
-        <figure id="img-div">
-            <img 
-                id="image" 
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG" 
-                alt="A formal portrait of Nikola Tesla wearing a suit."
-            >
-            <figcaption id="img-caption">
-                Nikola Tesla (1856–1943), the Serbian-American inventor, electrical engineer, and futurist.
-            </figcaption>
-        </figure>
+#main {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-        <section id="tribute-info">
-            <h2>Tesla's Revolutionary Timeline</h2>
-            <ul>
-                <li><strong>1856:</strong> Born in Smiljan, Austrian Empire (modern-day Croatia).</li>
-                <li><strong>1882:</strong> Conceives the idea for the **rotating magnetic field**, the principle behind nearly all AC machinery.</li>
-                <li><strong>1888:</strong> Invents the **induction motor** and patents the system for generating, transmitting, and using alternating current (AC).</li>
-                <li><strong>1891:</strong> Invents the **Tesla coil**, an electrical resonant transformer circuit used to produce high-voltage, high-frequency AC.</li>
-                <li><strong>1893:</strong> Showcases the power of AC by illuminating the **World's Columbian Exposition** in Chicago.</li>
-                <li><strong>1895:</strong> The Niagara Falls hydroelectric power plant, using Tesla's AC system, begins operation, delivering long-distance power.</li>
-                <li><strong>1943:</strong> Dies in New York City, leaving behind a legacy of over 300 patents worldwide.</li>
-            </ul>
-        </section>
+#title {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #1a5276;
+    font-size: 2.5em;
+    border-bottom: 2px solid #1a5276;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
 
-        <hr>
+#img-div {
+    background: #f4f7fa;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+}
 
-        <p class="quote">"The present is theirs; the future, for which I really worked, is mine."</p>
-        <p class="quote-author">— Nikola Tesla</p>
+#image {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+    max-height: 400px;
+    border-radius: 4px;
+    border: 3px solid #1a5276;
+}
 
-        <p class="more-info">
-            For more details on Tesla's inventions and life, visit his 
-            <a 
-                id="tribute-link" 
-                href="https://en.wikipedia.org/wiki/Nikola_Tesla" 
-                target="_blank"
-            >
-                Wikipedia page.
-            </a>
-        </p>
+#img-caption {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding: 15px 0 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
 
-    </main>
-</body>
-</html>
+#tribute-info {
+    padding: 20px 0;
+}
+
+#tribute-info h2 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #1a5276;
+    margin-bottom: 20px;
+}
+
+#tribute-info ul {
+    list-style-type: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+#tribute-info li {
+    margin: 15px 0;
+    padding-left: 1.5em;
+    position: relative;
+    border-left: 4px solid #3498db;
+}
+
+.quote {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 30px auto 5px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 1.1em;
+    color: #333;
+    max-width: 80%;
+}
+
+.quote-author {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.more-info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#tribute-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid #3498db;
+}
+
+#tribute-link:hover {
+    color: #1a5276;
+    border-bottom: 2px solid #1a5276;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
